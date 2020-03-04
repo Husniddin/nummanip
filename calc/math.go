@@ -3,7 +3,7 @@ package calc
 import "errors"
 
 // Add function returns sum of two integer
-func Add(numbers ...int) int {
+func Add(numbers ...int) (error, int) {
 	sum := 0
 
 	if len(numbers) < 2 {
